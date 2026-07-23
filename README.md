@@ -59,12 +59,13 @@ This one was a simpler setup. We just needed to determine the exact number of us
 <br />
 Retrieve all employees not in IT
 Here we re use the NOT command in department to filter out those who are in the IT dept. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. The not operator is effective and provides 161 employees that are not in the information technology department. The following demonstrates how I created the above SQL query to filter for employee machines from employees not in the Information Technology department.
-
+<br />
+<br />
 <img src="https://i.imgur.com/J2yDa0g.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 Summary:
-I applied filters to the SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the and, or not operators to filters for the specific information needed for each task. I also used like and the percentage sign to filter for patterns
+I applied filters to the SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the and, or not operators to filters for the specific information needed for each task. I also used like and the percentage sign to filter for patterns.
 <br/>
 </p>
 
