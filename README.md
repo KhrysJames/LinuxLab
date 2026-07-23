@@ -1,4 +1,79 @@
 # LinuxLab
 
+
+<h1> SQL Queries </h1>
+
+
+<h2>Description</h2>
 Part of my job is to investigate security issues to help keep the system secure. I recently discovered some potential security issues that involve login attempts and employee machines.
 MY task is to examine the organization’s data in their employees and log_in_attempts tables. I’ll need to use SQL filters to retrieve records from different datasets and investigate the potential security issues.
+
+<br />
+
+
+<h2>Languages and Utilities Used</h2>
+
+- <b>PowerShell</b> 
+- <b>Python</b>
+
+<h2>Environments Used </h2>
+
+- <b>Windows 10</b> (21H2)
+
+<h2>Program walk-through:</h2>
+
+<p align="center">
+Launch the utility: <br/>
+<img src="https://i.imgur.com/L7XZ8pn.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve after hours failed login attempts : 
+The  team is investigating failed login attempts that were made after business hours. I needed to retrieve this information from the login activity. I utilized the Where command > “18:00” to  identify all unsuccessful attempts after 18:00.
+:  <br/>
+<img src="https://i.imgur.com/h6kC6kD.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve login attempts on specific dates:
+Afterwards our team is investigating a suspicious event that occurred on '2022-05-09'. I will retrieve all login attempts that occurred on this day and the day before ('2022-05-08'). By utilizing the OR command I set both login_dates to 08 and 09.  The result was 75 attempts in 2 days.
+<br/>
+<img src="https://i.imgur.com/h6kC6kD.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve login attempts outside of Mexico:
+Simply adding the NOT command AFTER WHERE in the country category i can then utilize the “MEX%” to remove all the subjects that have the mex variation inside of it.  The percentage sign represents any number of unspecified characters when used with LIKE. This left me with 144 entries.
+<br/>
+<img src="https://i.imgur.com/TKkmu6r.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve employees in Marketing:
+The organization  is updating employee machines, and need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as 'East-170' or 'East-320'). Focusing on the where line again we change country to department and because we know which department you utilize the equal sign ‘marketing’. Because the office has two different East we will use the ‘East%’ command for Y.  This returns 7 usernames and ID’s in the marketing department who were also filtered to the EAST office. Although the numbers vary  the office still remains the constant.
+<br/>
+<img src="https://i.imgur.com/TKkmu6r.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve employees in Finance or Sales : 
+This one was a simpler setup. We just needed to determine the exact number of users in the finance and sales department. After selecting data from the employees table, the total came out to 71 users.
+<br/>
+<img src="https://i.imgur.com/J2yDa0g.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Retrieve all employees not in IT
+Here we re use the NOT command in department to filter out those who are in the IT dept. This update was already made to employee computers in the Information Technology department. The team needs information about employees who are not in that department. The not operator is effective and provides 161 employees that are not in the information technology department. The following demonstrates how I created the above SQL query to filter for employee machines from employees not in the Information Technology department.
+
+<img src="https://i.imgur.com/J2yDa0g.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+Summary:
+I applied filters to the SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the and, or not operators to filters for the specific information needed for each task. I also used like and the percentage sign to filter for patterns
+<br/>
+</p>
+
+<!--
+ ```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+--!>
