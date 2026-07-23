@@ -46,7 +46,7 @@ Simply adding the NOT command AFTER WHERE in the country category i can then uti
 <br />
 <br />
 Retrieve employees in Marketing:
-The organization  is updating employee machines, and need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as 'East-170' or 'East-320'). Focusing on the where line again we change country to department and because we know which department you utilize the equal sign ‘marketing’. Because the office has two different East we will use the ‘East%’ command for Y.  This returns 7 usernames and ID’s in the marketing department who were also filtered to the EAST office. Although the numbers vary  the office still remains the constant.
+The organization  is updating employee machines, and need to obtain the information about employees in the 'Marketing' department who are located in all offices in the East building (such as 'East-170' or 'East-320'). Focusing on the where line again we change country to department and because we know which department I utilize the equal sign ‘marketing’. Because the office has two different East we will use the ‘East%’ command for Y.  This returns 7 usernames and ID’s in the marketing department who were also filtered to the EAST office. Although the numbers vary  the office still remains the constant.
 <br/>
 <img src="https://i.imgur.com/TKkmu6r.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
