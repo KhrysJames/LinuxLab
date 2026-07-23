@@ -36,6 +36,7 @@ The  team is investigating failed login attempts that were made after business h
 Retrieve login attempts on specific dates:
 Afterwards our team is investigating a suspicious event that occurred on '2022-05-09'. I will retrieve all login attempts that occurred on this day and the day before ('2022-05-08'). By utilizing the OR command I set both login_dates to 08 and 09.  The result was 75 attempts in 2 days.
 <br/>
+<br/>
 <img src="https://i.imgur.com/h6kC6kD.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
